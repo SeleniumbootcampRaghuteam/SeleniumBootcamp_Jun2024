@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-03T15:21:37 IST" name="Suite" finished-at="2024-08-03T15:22:35 IST" duration-ms="57532">
+    <groups>
+    </groups>
+    <test started-at="2024-08-03T15:21:37 IST" name="create_Account" finished-at="2024-08-03T15:22:35 IST" duration-ms="57532">
+      <class name="testcases.Create_Account_S1106">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String)[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:21:37 IST" name="preCondition" finished-at="2024-08-03T15:21:50 IST" duration-ms="12411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://login.salesforce.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="createAccount()[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:21:50 IST" name="createAccount" finished-at="2024-08-03T15:22:34 IST" duration-ms="44598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:22:34 IST" name="postCondition" finished-at="2024-08-03T15:22:35 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testcases.Create_Account_S1106 -->
+    </test> <!-- create_Account -->
+  </suite> <!-- Suite -->
+</testng-results>

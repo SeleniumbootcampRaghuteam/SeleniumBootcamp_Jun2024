@@ -32,6 +32,7 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	
 	public static WebDriver driver;
 	public JavascriptExecutor executor;
+	public String excelFileName;
 	
 	public static WebElement waitForElement(WebDriver driver, By locator, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
@@ -78,7 +79,12 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	@AfterMethod
 	public void postCondition() {
             driver.quit();
-       
+	}
+	
+	@DataProvider(name="fetchData")
+	public String[][] getData() throws IOException
+	{
+		return utils.ReadExcelData.readExcel(excelFileName);
 	}
 	
 

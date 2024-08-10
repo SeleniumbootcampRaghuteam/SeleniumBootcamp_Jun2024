@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <parameter name="url" value="https://login.salesforce.com"/>
-  <test thread-count="5" name="create_Account(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.Create_Account_S1106">
+      <class name="testcases.CreateTaskFunctionality">
         <methods>
           <include name="preCondition"/>
-          <include name="createAccount"/>
           <include name="postCondition"/>
+          <include name="runCreateTask"/>
         </methods>
-      </class> <!-- testcases.Create_Account_S1106 -->
+      </class> <!-- testcases.CreateTaskFunctionality -->
     </classes>
-  </test> <!-- create_Account(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

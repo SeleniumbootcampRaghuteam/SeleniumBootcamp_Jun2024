@@ -11,9 +11,10 @@ import base.ProjectSpecificMethod;
 
 public class NewAccountPage extends ProjectSpecificMethod{
 	
-	/*
-	 * public NewAccountPage(WebDriver driver) { this.driver=driver; }
-	 */
+	
+	  public NewAccountPage(WebDriver driver)
+	   { this.driver=driver; }
+	 
 	
 	By locate_accountName=By.xpath("//input[@name='Name']");
 	By locate_ownershipText=By.xpath("//label[text()='Ownership']");
@@ -54,7 +55,7 @@ public class NewAccountPage extends ProjectSpecificMethod{
 		public  AccountHomePage  get_CreateAccountToastMessage() throws InterruptedException {
 		String text1 = waitForElement(driver, locate_toastMessageText, 40).getText();		
 		System.out.println(text1);
-		return new AccountHomePage();
+		return new AccountHomePage(driver);
 		}
 				
 			

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-03T15:21:37 IST" name="Suite" finished-at="2024-08-03T15:22:35 IST" duration-ms="57532">
+  <suite started-at="2024-08-10T16:59:41 IST" name="Suite" finished-at="2024-08-10T16:59:52 IST" duration-ms="11340">
     <groups>
     </groups>
-    <test started-at="2024-08-03T15:21:37 IST" name="create_Account" finished-at="2024-08-03T15:22:35 IST" duration-ms="57532">
-      <class name="testcases.Create_Account_S1106">
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String)[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:21:37 IST" name="preCondition" finished-at="2024-08-03T15:21:50 IST" duration-ms="12411" status="PASS">
+    <test started-at="2024-08-10T16:59:41 IST" name="Test" finished-at="2024-08-10T16:59:52 IST" duration-ms="11340">
+      <class name="testcases.CreateTaskFunctionality">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateTaskFunctionality@12468a38]" started-at="2024-08-10T16:59:41 IST" name="preCondition" finished-at="2024-08-10T16:59:44 IST" duration-ms="2921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="createAccount()[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:21:50 IST" name="createAccount" finished-at="2024-08-03T15:22:34 IST" duration-ms="44598" status="PASS">
+        <test-method signature="runCreateTask()[pri:0, instance:testcases.CreateTaskFunctionality@12468a38]" started-at="2024-08-10T16:59:44 IST" name="runCreateTask" finished-at="2024-08-10T16:59:52 IST" duration-ms="8152" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.Create_Account_S1106@2805d709]" started-at="2024-08-03T15:22:34 IST" name="postCondition" finished-at="2024-08-03T15:22:35 IST" duration-ms="432" status="PASS">
+        </test-method> <!-- runCreateTask -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.CreateTaskFunctionality@12468a38]" started-at="2024-08-10T16:59:52 IST" name="postCondition" finished-at="2024-08-10T16:59:52 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- testcases.Create_Account_S1106 -->
-    </test> <!-- create_Account -->
+      </class> <!-- testcases.CreateTaskFunctionality -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

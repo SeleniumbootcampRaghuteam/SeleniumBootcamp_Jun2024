@@ -12,7 +12,7 @@ public class Create_Account_S1106 extends ProjectSpecificMethod {
 	@Test
 	public void createAccount() throws InterruptedException {
 		
-		LoginPage lp=new LoginPage();
+		LoginPage lp=new LoginPage(driver);
 		
 		lp.enterLogin("bootcamp_2024@testleaf.com")
 		.enterPassword("Bootcamp@123")
@@ -23,7 +23,7 @@ public class Create_Account_S1106 extends ProjectSpecificMethod {
 		.click_SalesLink()
 		.click_AccountTab()
 		.click_NewButton();
-		NewAccountPage na=new NewAccountPage();
+		NewAccountPage na=new NewAccountPage(driver);
 		na.enter_AccountName()
 		.scroll_untillOwnershipDropdow()
 		.click_OwnershipDropdown()

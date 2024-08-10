@@ -8,9 +8,12 @@ import base.ProjectSpecificMethod;
 
 public class LoginPage extends ProjectSpecificMethod {
 
-	/*
-	 * public LoginPage(WebDriver driver) { this.driver=driver; }
-	 */
+	
+	  public LoginPage(WebDriver driver) 
+	  { 
+		  this.driver=driver; 
+	  }
+	 
 
 	By locate_loginField = By.id("username");
 	By locate_passwordField = By.id("password");
@@ -31,7 +34,7 @@ public class LoginPage extends ProjectSpecificMethod {
 	public HomePage clickLoginButton() {
 
 		driver.findElement(locate_loginButton).click();
-		return new HomePage();
+		return new HomePage(driver);
 
 	}
 

@@ -14,9 +14,9 @@ import base.ProjectSpecificMethod;
 
 public class AccountHomePage extends ProjectSpecificMethod{
 	
-	/*
-	 * public AccountHomePage(WebDriver driver) { this.driver=driver; }
-	 */
+	
+	  public AccountHomePage(WebDriver driver) { this.driver=driver; }
+	 
 	By locate_newLink=By.xpath("//span[text()='New Account']/../.."); 
 	By locate_ParentSearch=By.xpath("//button[contains(@class,'slds-button slds-button_neutral search-button slds-truncate')]");
 	By locate_childSearch=By.xpath("//input[@class='slds-input' and @placeholder='Search...']");
@@ -29,7 +29,7 @@ public class AccountHomePage extends ProjectSpecificMethod{
 		
 	 executor = (JavascriptExecutor)driver;
 	executor.executeScript("arguments[0].click();", locate_NewLink1);
-	return new NewAccountPage();
+	return new NewAccountPage(driver);
 		
 }
 	

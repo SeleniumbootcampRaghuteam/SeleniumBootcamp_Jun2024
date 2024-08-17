@@ -17,12 +17,19 @@ public class HomePage extends ProjectSpecificMethod{
 	By locate_viewAllLink = By.xpath("(//button[@class='slds-button'])[2]");  //button[text()='View All']
 	By locate_searchTextBox = By.xpath("//input[@class='slds-input']");
 	By locate_SalesLink=By.xpath("//p[contains(text(),'Manage your sales process')]/preceding-sibling::a//span//mark");
+	By locate_searchInput =By.xpath(prop.getProperty("HomePage.SearchInput.xpath"));
+	By locate_WTGLink = By.xpath(prop.getProperty("HomePage.WorkTypeGroupsLink.xpath"));
+	
 		
 	 public HomePage(WebDriver driver) 
 	 { 
 		 this.driver=driver;
 	 }
 	 
+/*
+	 * public HomePage(WebDriver driver) { this.driver=driver; }
+	 */
+
 
 	public  HomePage clickWaffle() throws InterruptedException 
 	{
@@ -136,5 +143,6 @@ public class HomePage extends ProjectSpecificMethod{
 		driver.findElement(By.xpath("//div[@data-name='Content']")).click();
 	}
 	
+
 	
 }

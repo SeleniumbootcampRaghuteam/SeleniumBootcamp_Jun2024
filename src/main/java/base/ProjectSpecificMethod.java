@@ -1,7 +1,10 @@
 package base;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +18,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,6 +37,10 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	public static WebDriver driver;
 	public JavascriptExecutor executor;
 	public String excelFileName;
+	public static Properties prop;
+	public Actions actions;
+	public String fileName;
+	public WebDriverWait wait;
 	
 	public static WebElement waitForElement(WebDriver driver, By locator, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
@@ -51,8 +59,12 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	
 	@Parameters({"browser","url"})
 	@BeforeMethod
-	public void preCondition(String lang, String url) 
+	public void preCondition(String lang, String url) throws IOException 
 	{
+		FileInputStream fis = new FileInputStream("./src/main/resources/config.en.properties");
+		prop = new Properties();
+		prop.load(fis);
+		
 		if(lang.equals("chrome")) {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");

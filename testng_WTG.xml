@@ -7,9 +7,9 @@
   <parameter name = "username" value = "bootcamp_2024@testleaf.com"/>
   <parameter name = "password" value = "Bootcamp@123"/>
     <classes>
-      <class name="testcases.WTG_Create"/>
+      <class name="testcases.WTG_Create"/> 
       <class name="testcases.WTG_CreateWithoutMandatoryFields"/>
-      <class name="testcases.WTG_Edit"/> 
+	  <class name="testcases.WTG_Edit"/> 
       <class name="testcases.WTG_Delete"/>
     </classes>
   </test> <!-- Test -->

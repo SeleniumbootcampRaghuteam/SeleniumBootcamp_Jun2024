@@ -5,6 +5,7 @@ import java.util.List;
 //import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,6 +18,7 @@ public class NewWorkTypeGroupModel extends ProjectSpecificMethod {
 		this.driver=driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		this.actions = new Actions(driver);
+		this.executor = (JavascriptExecutor)driver;
 	}
 
 	public NewWorkTypeGroupModel verifyNewWTGModel() {

@@ -1,13 +1,10 @@
 package base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,27 +16,24 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
-
 import com.framerwork.selenium.base.SeleniumBase;
-
-import utils.ReadData;
+import utils.ReadExcelData;
 
 
 public class ProjectSpecificMethod extends SeleniumBase {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	public JavascriptExecutor executor;
 	public String excelFileName;
 	public static Properties prop;
 	public Actions actions;
-	public String fileName;
+	public String WTGfileName;
 	public WebDriverWait wait;
 	
 	public static WebElement waitForElement(WebDriver driver, By locator, int timeout) {
@@ -96,7 +90,13 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	@DataProvider(name="fetchData")
 	public String[][] getData() throws IOException
 	{
-		return utils.ReadExcelData.readExcel(excelFileName);
+		return utils.ReadExcelData.readExcelData(excelFileName);
+	}
+	
+	@DataProvider(name = "WorkTypeGroupName")
+	public String[][] getLoginDetails() throws IOException
+	{
+		return ReadExcelData.readExcelData(WTGfileName);
 	}
 	
 

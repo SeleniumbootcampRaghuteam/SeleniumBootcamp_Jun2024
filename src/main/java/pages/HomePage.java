@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,7 +23,9 @@ public class HomePage extends ProjectSpecificMethod{
 		
 	 public HomePage(WebDriver driver) 
 	 { 
-		 this.driver=driver;
+		this.driver=driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+		this.actions = new Actions(driver);
 	 }
 	 
 /*
@@ -143,6 +145,11 @@ public class HomePage extends ProjectSpecificMethod{
 		driver.findElement(By.xpath("//div[@data-name='Content']")).click();
 	}
 	
-
+	public WorkTypeGroupsPage searchSelectWorkTypeGroups() {
+		waitForElement(driver, locate_searchInput, 50).sendKeys(prop.getProperty("HomePage.SearchInput.text"));
+		WebElement button = waitForElement(driver, locate_WTGLink, 50);
+		actions.moveToElement(button).click().build().perform();
+		return new WorkTypeGroupsPage(driver);
+	}
 	
 }

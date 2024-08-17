@@ -2,8 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import base.ProjectSpecificMethod;
 
 public class LoginPage extends ProjectSpecificMethod {

@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Create_Account_S1106">
+      <class name="testcases.Create_Legal_Entity_S11108">
         <methods>
           <include name="preCondition"/>
-          <include name="createAccount"/>
+          <include name="setData"/>
           <include name="postCondition"/>
+          <include name="newlegalentity"/>
         </methods>
-      </class> <!-- testcases.Create_Account_S1106 -->
+      </class> <!-- testcases.Create_Legal_Entity_S11108 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

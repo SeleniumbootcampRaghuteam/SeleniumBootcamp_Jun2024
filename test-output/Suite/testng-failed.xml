@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="password" value="Bootcamp@123"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://login.salesforce.com"/>
-    <parameter name="username" value="bootcamp_2024@testleaf.com"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://login.salesforce.com"/>
+  <test thread-count="5" name="create_Account(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="testcases.S11_15_CreateNewDashboard">
+=======
+      <class name="testcases.Create_Legal_Entity_S11108">
+>>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
         <methods>
           <include name="preCondition"/>
+<<<<<<< HEAD
           <include name="setValues"/>
           <include name="newDashboard"/>
+=======
+          <include name="setData"/>
+>>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
           <include name="postCondition"/>
+<<<<<<< HEAD
+=======
+          <include name="newlegalentity"/>
+>>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- testcases.S11_15_CreateNewDashboard -->
+=======
+      </class> <!-- testcases.Create_Legal_Entity_S11108 -->
+>>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- create_Account(failed) -->
 </suite> <!-- Failed suite [Suite] -->

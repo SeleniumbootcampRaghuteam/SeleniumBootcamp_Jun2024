@@ -25,17 +25,19 @@ import org.testng.annotations.Parameters;
 import com.framerwork.selenium.base.SeleniumBase;
 import utils.ReadExcelData;
 
-
 public class ProjectSpecificMethod extends SeleniumBase {
-	
+
 	public WebDriver driver;
 	public JavascriptExecutor executor;
 	public String excelFileName;
+
 	public static Properties prop;
 	public Actions actions;
 	public String WTGfileName;
 	public WebDriverWait wait;
-	
+
+	public String excelSheetName;
+
 	public static WebElement waitForElement(WebDriver driver, By locator, int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -43,39 +45,37 @@ public class ProjectSpecificMethod extends SeleniumBase {
 	}
 
 	public static WebElement waitForElement2(WebDriver driver, By locator, int timeout) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));	
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		return driver.findElement(locator);
 	}
 
-	static Random rand=new Random();
+	static Random rand = new Random();
 	public static String set_Account_Name = "Yamuna" + rand.nextInt();
-	
-	@Parameters({"browser","url"})
+
+	@Parameters({ "browser", "url" })
 	@BeforeMethod
-	public void preCondition(String lang, String url) throws IOException 
-	{
+	public void preCondition(String lang, String url) throws IOException {
 		FileInputStream fis = new FileInputStream("./src/main/resources/config.en.properties");
 		prop = new Properties();
 		prop.load(fis);
-		
-		if(lang.equals("chrome")) {
+
+		if (lang.equals("chrome")) {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
 			driver = new ChromeDriver(option);
-		}
-		else if(lang.equals("edge")) {
-		EdgeOptions option = new EdgeOptions();
+		} else if (lang.equals("edge")) {
+			EdgeOptions option = new EdgeOptions();
 			option.addArguments("--disable-notifications");
 			driver = new EdgeDriver(option);
 		}
-		
-		else if(lang.equals("firefox")) {
+
+		else if (lang.equals("firefox")) {
 			FirefoxOptions option = new FirefoxOptions();
 			option.addArguments("--disable-notifications");
 			driver = new FirefoxDriver(option);
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(url);
@@ -84,20 +84,20 @@ public class ProjectSpecificMethod extends SeleniumBase {
 
 	@AfterMethod
 	public void postCondition() {
-            driver.quit();
+		driver.quit();
 	}
-	
-	@DataProvider(name="fetchData")
-	public String[][] getData() throws IOException
-	{
-		return utils.ReadExcelData.readExcelData(excelFileName);
+
+	@DataProvider(name = "fetchData")
+	public String[][] getData() throws IOException {
+
+		return utils.ReadExcelData.readExcel(excelFileName, excelSheetName);
 	}
-	
+
 	@DataProvider(name = "WorkTypeGroupName")
-	public String[][] getLoginDetails() throws IOException
-	{
-		return ReadExcelData.readExcelData(WTGfileName);
+	public String[][] getLoginDetails() throws IOException {
+
+		return ReadExcelData.readExcel(WTGfileName, excelSheetName);
+
 	}
-	
 
 }

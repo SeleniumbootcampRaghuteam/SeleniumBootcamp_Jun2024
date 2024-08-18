@@ -66,6 +66,12 @@ public class HomePage extends ProjectSpecificMethod{
 		return this;
 	}
 	
+	public AppLauncherPage searchItems(String searchText) {
+		// Click on the toggle menu button from the left corner
+		driver.findElement(By.xpath("//input[@class='slds-input']")).sendKeys(searchText);
+		return new AppLauncherPage(driver);
+	}
+	
 	public Sales_HomePage click_SalesLink()	
 	{	
 		driver.findElement(locate_SalesLink).click();
@@ -114,7 +120,6 @@ public class HomePage extends ProjectSpecificMethod{
 		driver.findElement(By.xpath("(//button[@type='button']/span[text()='Save'])[2]")).click();
 		return this;
 	}		
-				
 		
 	public HomePage verifyTask()
 	{

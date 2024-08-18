@@ -1,10 +1,8 @@
 package testcases;
 
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificMethod;
-import pages.HomePage;
 import pages.LoginPage;
 
 public class CreateTaskFunctionality extends ProjectSpecificMethod

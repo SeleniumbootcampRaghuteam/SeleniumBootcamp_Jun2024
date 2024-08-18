@@ -3,7 +3,6 @@ package testcases;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecificMethod;
-import pages.AccountHomePage;
 import pages.LoginPage;
 import pages.NewAccountPage;
 

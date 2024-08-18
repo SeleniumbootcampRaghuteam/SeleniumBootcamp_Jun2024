@@ -7,14 +7,14 @@
     <parameter name="url" value="https://login.salesforce.com"/>
     <parameter name="username" value="bootcamp_2024@testleaf.com"/>
     <classes>
-      <class name="testcases.WTG_Delete">
+      <class name="testcases.S11_15_CreateNewDashboard">
         <methods>
-          <include name="runWTGDelete" invocation-numbers="0"/>
           <include name="preCondition"/>
+          <include name="setValues"/>
+          <include name="newDashboard"/>
           <include name="postCondition"/>
-          <include name="fetchVariables"/>
         </methods>
-      </class> <!-- testcases.WTG_Delete -->
+      </class> <!-- testcases.S11_15_CreateNewDashboard -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

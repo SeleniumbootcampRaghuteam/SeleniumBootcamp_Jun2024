@@ -2,6 +2,7 @@ package com.framerwork.selenium.base;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -139,6 +140,17 @@ public class SeleniumBase implements Browser, Elements {
 
 	public WebDriverWait createWebDriverWait(WebDriver driver, int timeoutInSeconds) {
 		return new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	}
+	
+	public void switchToWindow() {
+		String WindowHandle = driver.getWindowHandle();
+
+		Set<String> CurrentOpenedWindows = driver.getWindowHandles();
+		for (String OpenWindow : CurrentOpenedWindows) {
+			if (!OpenWindow.equals(WindowHandle)) {
+				driver.switchTo().window(OpenWindow);
+			}
+		}
 	}
 
 }

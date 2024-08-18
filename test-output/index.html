@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\SANTHOSH\git\SeleniumBootcamp_Jun2024\testng_WTG.xml</span>
+                    <span>C:\Users\ThinkPad\git\SeleniumBootcamp_Jun2024\sequntial_testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.WTG_CreateWithoutMandatoryFields" class="method navigator-link" hash-for-method="runWTGCreateWithoutMandatoryFields">runWTGCreateWithoutMandatoryFields</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.Create_Legal_Entity_S11108" class="method navigator-link" hash-for-method="newlegalentity">newlegalentity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.WTG_CreateWithoutMandatoryFields</span>
+              <span class="class-name">testcases.Create_Legal_Entity_S11108</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runWTGCreateWithoutMandatoryFields">
-                  </a> <!-- runWTGCreateWithoutMandatoryFields -->
-                  <span class="method-name">runWTGCreateWithoutMandatoryFields</span>
+                  <a name="newlegalentity">
+                  </a> <!-- newlegalentity -->
+                  <span class="method-name">newlegalentity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,22 +136,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SANTHOSH\git\SeleniumBootcamp_Jun2024\testng_WTG.xml</span>
+            <span class="header-content">C:\Users\ThinkPad\git\SeleniumBootcamp_Jun2024\sequntial_testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;password&quot; value=&quot;Bootcamp@123&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;https://login.salesforce.com&quot;/&gt;
-    &lt;parameter name=&quot;username&quot; value=&quot;bootcamp_2024@testleaf.com&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://login.salesforce.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;create_Account&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.WTG_CreateWithoutMandatoryFields&quot;/&gt;
+      &lt;class name=&quot;testcases.Create_Legal_Entity_S11108&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- create_Account --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">create_Account (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runWTGCreateWithoutMandatoryFields')
-data.setCell(0, 2, 'testcases.WTG_CreateWithoutMandatoryFields')
-data.setCell(0, 3, 69638);
+data.setCell(0, 1, 'newlegalentity')
+data.setCell(0, 2, 'testcases.Create_Legal_Entity_S11108')
+data.setCell(0, 3, 16978);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -225,22 +222,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.WTG_CreateWithoutMandatoryFields</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.Create_Legal_Entity_S11108</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">fetchVariables(bootcamp_2024@testleaf.com, Bootcamp@123)</span>
+                <span class="method-name">setData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition(chrome, https://login.salesforce.com)</span>
-                <span class="method-start">92 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runWTGCreateWithoutMandatoryFields</span>
-                <span class="method-start">6664 ms</span>
+                <span class="method-name">newlegalentity</span>
+                <span class="method-start">3682 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">76362 ms</span>
+                <span class="method-start">20677 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

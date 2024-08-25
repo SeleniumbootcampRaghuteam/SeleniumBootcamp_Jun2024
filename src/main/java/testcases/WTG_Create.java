@@ -12,6 +12,7 @@ public class WTG_Create extends ProjectSpecificMethod{
 	@BeforeTest
 	public void fetchVariables(String username, String password) {
 		WTGfileName = "WorkTypeGroupName_Create";
+		excelSheetName = "Sheet1";
 		uName = username;
 		pWord = password;
 		

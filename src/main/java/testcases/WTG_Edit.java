@@ -13,6 +13,7 @@ public class WTG_Edit extends ProjectSpecificMethod {
 	@BeforeTest
 	public void fetchVariables(String username, String password) {
 		WTGfileName = "WorkTypeGroupName_Edit";
+		excelSheetName = "Sheet1";
 		uName = username;
 		pWord = password;
 		

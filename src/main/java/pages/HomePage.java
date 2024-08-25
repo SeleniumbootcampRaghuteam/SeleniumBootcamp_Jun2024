@@ -63,7 +63,7 @@ public class HomePage extends ProjectSpecificMethod{
 		waitForElement(driver, locate_searchTextBox, 20).sendKeys("sales");
 		return this;
 	}
-<<<<<<< HEAD
+
 	
 	public AppLauncherPage searchItems(String searchText) {
 		// Click on the toggle menu button from the left corner
@@ -71,7 +71,7 @@ public class HomePage extends ProjectSpecificMethod{
 		return new AppLauncherPage(driver);
 	}
 	
-=======
+
 
 	public LegalEntityPage searchLegalEntityandClick() 
 	{	
@@ -84,7 +84,7 @@ public class HomePage extends ProjectSpecificMethod{
 		return new LegalEntityPage(driver);
 	}
 
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+
 	public Sales_HomePage click_SalesLink()	
 	{	
 		driver.findElement(locate_SalesLink).click();

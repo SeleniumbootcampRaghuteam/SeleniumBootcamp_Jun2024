@@ -1,71 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-08-18T17:48:41 IST" name="Suite" finished-at="2024-08-18T17:48:41 IST" duration-ms="688">
-=======
-  <suite started-at="2024-08-18T17:01:24 IST" name="Suite" finished-at="2024-08-18T17:01:45 IST" duration-ms="21089">
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+  <suite started-at="2024-08-25T17:35:52 IST" name="Suite" finished-at="2024-08-25T17:36:11 IST" duration-ms="18764">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2024-08-18T17:48:41 IST" name="Test" finished-at="2024-08-18T17:48:41 IST" duration-ms="688">
-      <class name="testcases.S11_15_CreateNewDashboard">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:testcases.S11_15_CreateNewDashboard@1b2abca6]" started-at="2024-08-18T17:48:41 IST" name="setValues" finished-at="2024-08-18T17:48:41 IST" duration-ms="6" status="PASS">
-=======
-    <test started-at="2024-08-18T17:01:24 IST" name="create_Account" finished-at="2024-08-18T17:01:45 IST" duration-ms="21089">
-      <class name="testcases.Create_Legal_Entity_S11108">
-        <test-method is-config="true" signature="setData()[pri:0, instance:testcases.Create_Legal_Entity_S11108@6f1de4c7]" started-at="2024-08-18T17:01:24 IST" name="setData" finished-at="2024-08-18T17:01:24 IST" duration-ms="24" status="PASS">
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- setValues -->
-        <test-method signature="newDashboard(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.S11_15_CreateNewDashboard@1b2abca6]" started-at="2024-08-18T17:48:41 IST" name="newDashboard" data-provider="fetchData" finished-at="2024-08-18T17:48:41 IST" duration-ms="661" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void testcases.S11_15_CreateNewDashboard.newDashboard(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: newDashboard([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Salesforce Automation by Sudhindar K M,(java.lang.String) Sudhindar]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void testcases.S11_15_CreateNewDashboard.newDashboard(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: newDashboard([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Salesforce Automation by Sudhindar K M,(java.lang.String) Sudhindar]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-=======
-        </test-method> <!-- setData -->
-        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String)[pri:0, instance:testcases.Create_Legal_Entity_S11108@6f1de4c7]" started-at="2024-08-18T17:01:24 IST" name="preCondition" finished-at="2024-08-18T17:01:28 IST" duration-ms="3598" status="PASS">
+    <test started-at="2024-08-25T17:35:52 IST" name="Test" finished-at="2024-08-25T17:36:11 IST" duration-ms="18764">
+      <class name="testcases.CreateTaskFunctionality">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String)[pri:0, instance:testcases.CreateTaskFunctionality@564fabc8]" started-at="2024-08-25T17:35:52 IST" name="preCondition" finished-at="2024-08-25T17:35:58 IST" duration-ms="5328" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,25 +20,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- newDashboard -->
-      </class> <!-- testcases.S11_15_CreateNewDashboard -->
-    </test> <!-- Test -->
-=======
         </test-method> <!-- preCondition -->
-        <test-method signature="newlegalentity()[pri:0, instance:testcases.Create_Legal_Entity_S11108@6f1de4c7]" started-at="2024-08-18T17:01:28 IST" name="newlegalentity" finished-at="2024-08-18T17:01:45 IST" duration-ms="16978" status="PASS">
+        <test-method signature="runCreateTask()[pri:0, instance:testcases.CreateTaskFunctionality@564fabc8]" started-at="2024-08-25T17:35:58 IST" name="runCreateTask" finished-at="2024-08-25T17:36:10 IST" duration-ms="12415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newlegalentity -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.Create_Legal_Entity_S11108@6f1de4c7]" started-at="2024-08-18T17:01:45 IST" name="postCondition" finished-at="2024-08-18T17:01:45 IST" duration-ms="389" status="PASS">
+        </test-method> <!-- runCreateTask -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testcases.CreateTaskFunctionality@564fabc8]" started-at="2024-08-25T17:36:10 IST" name="postCondition" finished-at="2024-08-25T17:36:11 IST" duration-ms="946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- testcases.Create_Legal_Entity_S11108 -->
-    </test> <!-- create_Account -->
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+      </class> <!-- testcases.CreateTaskFunctionality -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

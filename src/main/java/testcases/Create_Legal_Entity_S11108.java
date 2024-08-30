@@ -12,7 +12,7 @@ public class Create_Legal_Entity_S11108 extends ProjectSpecificMethod{
         LoginPage lp=new LoginPage(driver);
 		 
 		lp.enterLogin("bootcamp_2024@testleaf.com")
-		.enterPassword("Bootcamp@123")
+		.enterPassword("Bootcamp@1234")
 		.clickLoginButton()
 		.clickWaffle()
 		.click_viewAllLink().searchLegalEntityandClick().selectNewNLE().switchToNLEWindow().enterNewNLEName().clickSaveNLE().verifytoasterMsgNLE();

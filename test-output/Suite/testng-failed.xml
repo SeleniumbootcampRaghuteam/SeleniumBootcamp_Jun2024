@@ -3,32 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <parameter name="url" value="https://login.salesforce.com"/>
-  <test thread-count="5" name="create_Account(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="testcases.S11_15_CreateNewDashboard">
-=======
-      <class name="testcases.Create_Legal_Entity_S11108">
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+      <class name="testcases.CreateNewServiceTerritory">
         <methods>
           <include name="preCondition"/>
-<<<<<<< HEAD
-          <include name="setValues"/>
-          <include name="newDashboard"/>
-=======
-          <include name="setData"/>
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+          <include name="createServiceTerritory" invocation-numbers="0"/>
           <include name="postCondition"/>
-<<<<<<< HEAD
-=======
-          <include name="newlegalentity"/>
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+          <include name="setData"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- testcases.S11_15_CreateNewDashboard -->
-=======
-      </class> <!-- testcases.Create_Legal_Entity_S11108 -->
->>>>>>> branch 'master' of https://github.com/SeleniumbootcampRaghuteam/SeleniumBootcamp_Jun2024.git
+      </class> <!-- testcases.CreateNewServiceTerritory -->
     </classes>
-  </test> <!-- create_Account(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

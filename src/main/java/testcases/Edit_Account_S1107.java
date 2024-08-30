@@ -15,7 +15,7 @@ public class Edit_Account_S1107 extends ProjectSpecificMethod {
 		LoginPage lp=new LoginPage(driver);
 		
 		lp.enterLogin("bootcamp_2024@testleaf.com")
-		.enterPassword("Bootcamp@123")
+		.enterPassword("Bootcamp@1234")
 		.clickLoginButton()
 		.clickWaffle()
 		.click_viewAllLink()

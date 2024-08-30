@@ -13,7 +13,7 @@ public class CreateNewServiceTerritory extends ProjectSpecificMethod
 	public void createServiceTerritory(String name, String city, String state, String country, String pincode) throws InterruptedException
 	{
 	LoginPage lp = new LoginPage(driver);
-	lp.enterLogin("bootcamp_2024@testleaf.com").enterPassword("Bootcamp@123").clickLoginButton().clickWaffle().click_viewAllLink().clickServiceTerritory().
+	lp.enterLogin("bootcamp_2024@testleaf.com").enterPassword("Bootcamp@1234").clickLoginButton().clickWaffle().click_viewAllLink().clickServiceTerritory().
 	clickNew().enterName(name).checkActiveField().clickOperatingHours().enterCity(city).enterState(state).
 	enterCountry(country).enterPincode(pincode).saveServiceTerritory().verifyServiceTerritory();
 	}
@@ -22,6 +22,7 @@ public class CreateNewServiceTerritory extends ProjectSpecificMethod
 	public void setData()
 	{
 		excelFileName = "CreateServiceTerritory";
+		excelSheetName = "Sheet1";
 	}
 	
 }
